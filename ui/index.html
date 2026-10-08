@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A.U.R.O.R.A. // Scarlet Cyber-Glass</title>
+  <link rel="stylesheet" href="/ui/style.css" />
+</head>
+<body>
+  <div class="scanlines"></div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+  <aside class="sidebar glass">
+    <div class="brand"><span class="brand-mark">A</span><div><strong>A.U.R.O.R.A.</strong><small>NEURAL STUDIO // 01</small></div></div>
+    <button id="new-session" class="new-session">＋ NEW REASONING SESSION</button>
+    <div class="section-label">SESSION HISTORY <span>03</span></div>
+    <nav class="history"><button class="history-item active"><i>◈</i> Learn Python Systems</button><button class="history-item"><i>◌</i> Analyze YOLOv8 Data</button><button class="history-item"><i>◌</i> Deploy FastAPI Backend</button><button class="history-item"><i>◌</i> Summarize CV.pdf</button></nav>
+    <div class="sidebar-spacer"></div>
+    <div class="access"><span class="status-dot"></span><div><b>AMANAT // ACCESS: OMEGA</b><small>LOCAL OPERATOR</small></div><span>⚙</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumb">LOCAL / <span>REASONING CORE</span></div><div class="top-time" id="clock">00:00:00</div></header>
+    <section class="workspace">
+      <div class="hud-left"><span>CORE_COORD</span><b>43.2389° N<br>76.8897° E</b><em>SECURE LOCAL LOOP</em></div>
+      <div class="core-zone"><div class="core-label">A.U.R.O.R.A. CORE <span id="core-mode">STANDBY</span></div><div id="core" class="core"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="orb"><div class="orb-noise"></div><span>A</span></div></div><div class="core-caption">ADAPTIVE UNDERSTANDING &amp; REASONING OPERATIVE<br><span id="core-caption-status">Awaiting your instruction</span></div></div>
+      <div class="hud-right glass"><div class="hud-title">SYSTEM VITALS <span class="live">● LIVE</span></div><div class="metric"><span>CPU LOAD</span><b id="cpu-bar">▰▰▰▱▱ 42%</b></div><div class="metric"><span>MEMORY</span><b>▰▰▰▰▱ 68%</b></div><div class="metric"><span>LLM LINK</span><b class="ok" id="model-status">CHECKING...</b></div><div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div id="messages" class="messages"><div class="welcome"><div class="mini-core">A</div><div><span class="speaker">A.U.R.O.R.A. // CORE</span><h1>What shall we learn today?</h1><p>Give me a topic and source material in the Learning Console, or send an instruction to test the local neural core.</p></div></div></div>
+      <section class="composer glass"><div class="composer-line"><span class="prompt-mark">›</span><textarea id="message" rows="1" placeholder="Ask A.U.R.O.R.A. anything about its current training..." ></textarea><button id="send" class="send">SEND <span>↗</span></button></div><div class="composer-meta"><span>LOCAL CHECKPOINT // MPS READY</span><span>ENTER TO SEND · SHIFT+ENTER NEW LINE</span></div></section>
+    </section>
+  </main>
+  <aside class="right-rail"><section class="learn-panel glass"><div class="panel-title"><span>LEARNING CONSOLE</span><span class="pulse">●</span></div><p class="hint">Name the subject and paste notes, docs, or code. A background run will tokenize the material, train, validate, and save a checkpoint.</p><label>TOPIC<input id="topic" value="Python programming fundamentals" /></label><label>TRAINING MATERIAL<textarea id="materials" rows="7">Python is a programming language focused on readability and clear syntax. Variables hold values, functions organize reusable behavior, and classes model objects. A reliable program is tested, documented, and split into small modules.</textarea></label><button id="learn" class="learn-btn">START DIRECTED LEARNING <span>⟶</span></button><div id="train-state" class="train-state">READY // WAITING FOR TOPIC</div></section><section class="activity glass"><div class="panel-title">EXECUTION LOG <span>⌁</span></div><div id="logs" class="logs"><div>>> system_boot // success</div><div>>> mps_probe // complete</div></div></section></aside>
+  <script src="/ui/app.js"></script>
+</body>
+</html>
